@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="banner">
+    <div class="logo">
+      <img src="/assets/logo-luxosun.png" alt="logo" class="logo" />
+    </div>
+    <div class="buttons">
+      <button class="button-left bl" onmouseenter="showCircle(event)" onmouseleave="hideCircle(event)" onclick="redirectTo('one')">Propriétaire de résidence secondaire</button>
+      <button class="button-right bl2" onmouseenter="showCircle(event)" onmouseleave="hideCircle(event)" onclick="redirectTo('two')">Des envies de voyage</button>
+    </div>
+  <div class="language">
+    <a href="index.html" class="flag french"></a>
+      <a href="english.html" class="flag english"></a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="parallax"></div>
+    <div class="content">
+      <h2 style="font-size: 3em;">Bienvenue</h2>
+      <p>Luxosun est une entreprise familiale située sur la Côte d'Azur et Monaco.
+Nous offrons des services de luxe sur demande tels que le service de conciergerie, la maintenance de vos résidences principales et secondaires tout en gardant vos animaux de compagnie pendant vos absences prolongées.</p>
+    </div>
+  </div>
+  <div class="Diviseur">
+      <img src="/assets/Diviseur.png" alt="Diviseur" class="Diviseur-image"/>
+  </div>
+  <div class="sun-container">
+    <img src="/assets/Sun.png" alt="soleil" class="sun-image" />
+    <div class="circle-container">
+      <div class="circle">
+        <img src="/assets/house.svg" alt="image1" class="circle-image" />
+        <div class="circle-text">Préparation de votre venue telle que l'exécution du ménage avant arrivée et fin de séjour, les courses, l'organisation de week-ends sur demande et bien d'autres encore.</div>
+      </div>
+      <div class="circle">
+        <img src="/assets/lock.svg" alt="image2" class="circle-image" />
+        <div class="circle-text">Un sentiment de sécurité tout au long de l'année avec notre service de visites régulières, ainsi que la possibilité d'un contrat annuel adapté et personnalisé.</div>
+      </div>
+      <div class="circle">
+        <img src="/assets/dog.svg" alt="image3" class="circle-image" />
+        <div class="circle-text">Pour les résidents qui partent en vacances ou encore en weekend prolongé, nous nous occupons de vos animaux de compagnie à votre domicile. De simples visites aux promenades régulières, nous répondons à vos besoins.</div>
+      </div>
+      <div class="circle">
+        <img src="/assets/tools.svg" alt="image4" class="circle-image" />
+        <div class="circle-text">Gestion à l'année de votre résidence secondaire selon vos besoins, comme multiples réparations, entretien jardin, piscine et autres.</div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="Diviseur" id="one">
+    <img src="/assets/Diviseur.png" alt="Diviseur" class="Diviseur-image"/>
+</div>
+<div class="custom-container animatedOpacity">
+    <div class="custom-content">
+      <div class="custom-left">
+        <img src="/assets/view_proprio.jpg" alt="image" />
+      </div>
+      <div class="custom-right">
+        <h3>Propriétaire<br /> de résidence secondaire</h3>
+        <div class="custom-image">
+          <img src="/assets/bande-couleur.svg" alt="image" />
+        </div>
+        <p>Luxosun s'occupe de votre maison avec un abonnement mensuel, annuel ou sur demande.
+          Nous intervenons pour répondre à vos besoins, de l'inspection quotidienne à la réparation de divers dégâts en passant par des services de ménage/jardinage et d'entretien de piscine, etc.
+          Parce que nous savons que votre temps est précieux, notre mission est votre satisfaction et votre tranquillité d'esprit.
+          De plus, nous organisons des activités, du baby-sitting, le transfert aéroport et d'autres services supplémentaires, sur demande, dont vous pouvez avoir besoin lors de votre séjour.
+          Pour connaître notre large gamme de services, contactez-nous aujourd'hui et nous nous occuperons de répondre à tous vos besoins.</p>
+      </div>
+    </div>
+  </div>
+  <div class="Diviseur" id="two">
+    <img src="/assets/Diviseur.png" alt="Diviseur" class="Diviseur-image"/>
+</div>
+<div class="custom-container animatedOpacity custom-container-reverse">
+    <div class="custom-content">
+        <div class="custom-right">
+            <h3>Des envies de voyage</h3>
+            <div class="custom-image">
+              <img src="/assets/bande-couleur.svg" alt="image" />
+            </div>
+            <p>Luxosun prend soin de votre logement que ce soit pendant un week-end ou quelques semaines, nous répondons à vos besoins.
+              Avec des services de garde d'animaux personnalisés, nous vous proposons de devenir les compagnons temporaires de vos animaux domestiques. C'est une excellente solution pour vos animaux qui peuvent rester confortablement chez eux pendant votre absence. 
+              Pour toute information supplémentaire, contactez-nous aujourd'hui.</p>
+          </div>
+          <div class="custom-left">
+            <img src="/assets/noxdim.png" alt="image" />
+          </div>
+    </div>
+  </div>
+  <div class="Diviseur">
+    <img src="/assets/Diviseur.png" alt="Diviseur" class="Diviseur-image"/>
+</div>
+<div class="contact-container">
+  <form id="formulaire" class="contact-form" action="https://formspree.io/f/mrgvwqpr" method="post">
+    <h3>Nous contacter</h3>
+    <div class="form-row">
+      <input type="text" id="nom" name="nom" placeholder="Nom *" pattern="[A-Za-z]+" required>
+      <span class="error-message">Veuillez entrer un nom valide.</span>
+    </div>
+    <div class="form-row">
+      <input type="text" id="prenom" name="prenom" placeholder="Prénom *" pattern="[A-Za-z]+" required>
+      <span class="error-message">Veuillez entrer un prénom valide.</span>
+    </div>
+    <div class="form-row">
+      <input type="email" id="email" name="email" placeholder="Email *" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+      <span class="error-message">Veuillez entrer une adresse mail valide.</span>
+    </div>
+    <div class="form-row">
+      <input type="tel" id="telephone" name="telephone" placeholder="N° de téléphone *" pattern="^(\+?\d{1,3}\s?)?(\(?\d{1,3}\)?\s?)?\d{1,4}[\s.-]?\d{1,4}[\s.-]?\d{1,9}$" required>
+      <span class="error-message">Veuillez entrer un numéro de téléphone valide.</span>
+    </div>
+    <div class="form-row">
+      <textarea id="projet" name="projet" rows="4" placeholder="Votre projet *" pattern="[a-zA-Z0-9]" required></textarea>
+      <span class="error-message">Veuillez entrer votre projet.</span>
+    </div>
+    <div class="form-row">
+      <button type="submit">Envoyer</button>
+    </div>
+    <div id="message-erreur" class="error-message" style="display: none;"></div>
+    <p class="renseignement">* Informations à renseigner obligatoirement</p>
+  </form>
+  <div class="testimonial-container">
+      <div class="testimonial-background">
+        <div class="testimonial-carousel">
+          <div class="testimonial-slide active ">
+              <!-- Contenu de la première slide -->
+              <span class="avatar"><img src="assets/french.png" alt="avatar" class="img-testimonial"></span>
+              <h1>Melany Pfalzgraff</h1>
+              <p>Lorem ipsum dolor sit amet, consectelur adipiscing elit. Curabitur finibus pretium ac maximus. Vestibulum eget ex sit amet neque aliquam. Sonsectetur adipiscing elit.</p>
+              <img src="assets/notation.svg" alt="notation" class="notation">
+          </div>
+            <div class="testimonial-slide">
+                <!-- Contenu de la deuxième slide -->
+              <span class="avatar"><img src="assets/french.png" alt="avatar" class="img-testimonial"></span>
+              <h1>Melany graff</h1>
+              <p>Lorem ipsum dolor sit amet, consectelur adipiscing elit. Curabitur finibus pretium ac maximus. Vestibulum eget ex sit amet neque aliquam. Sonsectetur adipiscing elit.</p>
+              <img src="assets/notation.svg" alt="notation" class="notation">
+            </div>
+            <div class="testimonial-slide">
+                <!-- Contenu de la troisième slide -->
+              <span class="avatar"><img src="assets/french.png" alt="avatar" class="img-testimonial"></span>
+              <h1>Melany P</h1>
+              <p>Lorem ipsum dolor sit amet, consectelur adipiscing elit. Curabitur finibus pretium ac maximus. Vestibulum eget ex sit amet neque aliquam. Sonsectetur adipiscing elit.</p>
+              <img src="assets/notation.svg" alt="notation" class="notation">
+            </div>
+          <!-- Contenu du carrousel de témoignages -->
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot active" onclick="changeSlide(0)"></span>
+          <span class="dot" onclick="changeSlide(1)"></span>
+          <span class="dot" onclick="changeSlide(2)"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mentions">Mentions légales</div>
+  <div class="mentions">Politique de confidentialité</div>
+
+  <div class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h3>Mentions légales</h3>
+    <p>Luxosun SAS, 2 T Rue Spitalieri 06000 Nice, capital social de 1000 Euros, 953 667 300 00016, luxosun.info@gmail.com, "téléphone", "numéro identifiant TVA", "Identité de l'hébergeur,(Entreprise en charge de stocker sur ses serveurs les données du site internet du site : nom ou dénomination sociale, adresse et numéro de téléphone)</p>
+    <!-- Autres éléments de la pop-up -->
+    </div>
+  </div>
+  
+  <div class="reseaux-sociaux">
+    <p>Retrouvez-nous sur les réseaux sociaux :</p>
+    <div class="reseaux-sociaux-icons">
+      <a href="https://instagram.com/luxosun_?igshid=MzRIODBiNWFILZA==" target="_blank" class="icone-reseau-sociaux"><img src="assets/instagram.svg" alt="instagram" class="instagram"></a>
+      <a href="https://www.facebook.com/profile.php?id=100092581039383" target="_blank" class="icone-reseau-sociaux"><img src="assets/facebook.svg" alt="facebook" class="facebook"></a>
+      <!--<a href="#" class="icone-reseau-sociaux"><img src="assets/tiktok.svg" alt="tiktok" class="tiktok"></a>-->
+    </div>
+    <div style="color: grey;"> c Luxosun</div>
+  </div>
+  
+  <div class="button-container">
+    <div class="back-to-top">
+      <!-- Contenu du bouton pour remonter en haut du site -->
+      <i class="fas fa-arrow-up fa-fw"></i>
+    </div>
+    <!--<div class="whatsapp-button">
+      <a href="javascript:void(0)" onclick="openWhatsAppChat()">
+        <img src="path/to/whatsapp-logo.png" alt="WhatsApp" />
+      </a>
+    </div>
+  </div>
+  
+  <iframe id="whatsapp-iframe" class="whatsapp-chat" src="https://web.whatsapp.com/send?phone=0683183533" style="display: none;"></iframe>
+  
+  <div id="whatsapp-chat" class="whatsapp-chat">
+    <div class="header">
+      <span class="close" onclick="closeWhatsAppChat()">&times;</span>
+    </div>
+    <div class="chat">
+       Contenu de la zone de discussion 
+    </div>
+    <div class="footer">
+      <input type="text" id="whatsapp-message" placeholder="Votre message" />
+      <button onclick="sendWhatsAppMessage()">Envoyer</button>
+    </div>-->
+  </div>
+  
+  <!-- Ajoutez ici le reste du contenu de votre site web -->
+  <script src="index.js"></script>
+</body>
+</html>
