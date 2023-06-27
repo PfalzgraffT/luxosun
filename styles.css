@@ -187,7 +187,7 @@ body {
 }
 
 .french {
-  background-image: url("/assets/french.png");
+  background-image: url("french.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -197,7 +197,7 @@ body {
 }
 
 .english {
-  background-image: url("/assets/english.png");
+  background-image: url("english.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -215,7 +215,7 @@ body {
   overflow: hidden;
 }
 .parallax {
-  background-image: url("/assets/monaco.jpg");
+  background-image: url("monaco.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
