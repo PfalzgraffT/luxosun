@@ -47,7 +47,7 @@ body {
 .buttons .button-right {
   margin-right: 0em;
   width: 40%;
-  height: 8vh;
+  height: 5vh;
   background-color: #C9AC81;
   border: none;
   z-index: 1;
@@ -55,7 +55,7 @@ body {
   border-radius: 50px;
   position: relative;
   left: 50%;
-  top: -1em;
+  top: 1em;
   transition: background-color 0.5s ease;
   overflow: hidden;
   font-size: 1vw;
@@ -64,14 +64,14 @@ body {
 .buttons .button-left {
   margin-right: 0em;
   width: 40%;
-  height: 8vh;
+  height: 5vh;
   background-color: #ada8bf;
   border: none;
   color: white;
   border-radius: 50px;
   position: relative;
   left: -50%;
-  top: -1em;
+  top: 1em;
   z-index: -1;
   transition: background-color 0.5s ease;
   overflow: hidden;
