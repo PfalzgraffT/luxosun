@@ -503,6 +503,10 @@ body {
   opacity: 0.6;
   transition: opacity 0.3s, transform 0.3s; /* Ajout de la transition pour la propriété transform */
   z-index: 0;
+  height: 200px; /* Définir une hauteur fixe */
+  overflow: hidden; /* Masquer le texte qui dépasse */
+  text-overflow: ellipsis; /* Ajouter "..." à la fin du contenu tronqué */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
 }
 
 
