@@ -385,28 +385,46 @@ function toggleBannerVisibility() {
 window.addEventListener('scroll', toggleBannerVisibility);
 
 
-const mentionsElement = document.querySelector('.mentions');
+const mentionsElements = document.querySelectorAll('.mentions');
 const popupElement = document.querySelector('.popup');
+const popupPolicyElement = document.querySelector('.popup-policy');
 const closeElement = document.querySelector('.close');
+const popupTitleElement = document.querySelectorAll('.popup-title');
+const popupTextElement = document.querySelectorAll('.popup-text');
 
-mentionsElement.addEventListener('click', () => {
-  setTimeout(() => {
-    popupElement.classList.add('show');
-  }, 200);
+mentionsElements.forEach((mentionsElement, index) => {
+  mentionsElement.addEventListener('click', () => {
+    if (index === 0) {
+      popupTitleElement[0].textContent = 'Mentions légales';
+      popupTextElement[0].textContent = 'Luxosun SAS, 2 T Rue Spitalieri 06000 Nice, capital social de 1000 Euros, 953 667 300 00016, luxosun.info@gmail.com, "téléphone", "numéro identifiant TVA", "Identité de l\'hébergeur",(Entreprise en charge de stocker sur ses serveurs les données du site internet du site : nom ou dénomination sociale, adresse et numéro de téléphone)';
+      setTimeout(() => {
+        popupElement.classList.add('show');
+      }, 200);
+    } else if (index === 1) {
+      popupTitleElement[1].textContent = 'Politique de confidentialité';
+      popupTextElement[1].textContent = 'Politique de confidentialité\n\nCette politique de confidentialité décrit comment nous collectons, utilisons et protégeons les informations personnelles que vous nous fournissez via notre site web.\n\n1- Collecte d\'informations personnelles\nNous collectons les informations personnelles suivantes lorsque vous remplissez notre formulaire de contact : nom, prénom, adresse e-mail et numéro de téléphone.\n\n2- Utilisation des informations\nLes informations que vous nous fournissez sont utilisées dans le but de vous fournir des devis et/ou des informations sur vos demandes. Nous n\'utiliserons pas vos informations à d\'autres fins sans votre consentement explicite.\n\n3- Partage des informations\nNous ne partageons pas vos informations personnelles avec des tiers, sauf si cela est nécessaire pour répondre à votre demande ou si nous y sommes légalement tenus.\n\n4- Sécurité des données\nNous prenons des mesures de sécurité appropriées pour protéger vos informations personnelles. Les informations que vous nous fournissez via notre formulaire de contact sont transmises de manière sécurisée via le site web "https://formspree.io".\n\n5- Utilisation de cookies\nNous n\'utilisons pas de cookies pour le moment.\n\n6- Accès et rectification des informations\nUne fois que vous avez soumis le formulaire de contact, les informations sont directement envoyées à notre adresse e-mail professionnelle. Par conséquent, toute rectification des informations nécessitera de nous contacter directement par téléphone ou par e-mail.\n\n7- Coordonnées\nPour nous contacter ou pour toute question concernant notre politique de confidentialité, veuillez utiliser les informations suivantes :\n\nNuméro de téléphone : (+33) 0788707657\nAdresse e-mail : luxosun@outlook.com\nRéseaux sociaux : Instagram et Facebook\n\n8- Utilisateurs mineurs\nNotre site web n\'est pas destiné aux enfants de moins de 16 ans. Nous ne collectons pas sciemment d\'informations personnelles auprès de personnes âgées de moins de 16 ans.';
+      setTimeout(() => {
+        popupPolicyElement.classList.add('show');
+      }, 200);
+    }
+  });
 });
 
 closeElement.addEventListener('click', () => {
   setTimeout(() => {
     popupElement.classList.remove('show');
+    popupPolicyElement.classList.remove('show');
   }, 200);
 });
 
 // Ajoutez cet événement de clic sur l'ensemble du document (body)
 document.body.addEventListener('click', (event) => {
-  if (!popupElement.contains(event.target) && !mentionsElement.contains(event.target)) {
+  if (!popupElement.contains(event.target) && !popupPolicyElement.contains(event.target) && !mentionsElements[0].contains(event.target) && !mentionsElements[1].contains(event.target)) {
     popupElement.classList.remove('show');
+    popupPolicyElement.classList.remove('show');
   }
 });
+
 
 
 
