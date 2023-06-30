@@ -385,14 +385,25 @@ function toggleBannerVisibility() {
 window.addEventListener('scroll', toggleBannerVisibility);
 
 
-const mentionsElement = document.querySelector('.mentions');
+const mentionsElements = document.querySelectorAll('.mentions');
 const popupElement = document.querySelector('.popup');
 const closeElement = document.querySelector('.close');
+const popupTitleElement = document.querySelector('.popup-title');
+const popupTextElement = document.querySelector('.popup-text');
 
-mentionsElement.addEventListener('click', () => {
-  setTimeout(() => {
-    popupElement.classList.add('show');
-  }, 200);
+mentionsElements.forEach((mentionsElement) => {
+  mentionsElement.addEventListener('click', () => {
+    if (mentionsElement.textContent === 'Politique de confidentialité') {
+      popupTitleElement.textContent = 'Politique de confidentialité';
+      popupTextElement.textContent = 'Votre texte de politique de confidentialité ici.';
+    } else if (mentionsElement.textContent === 'Mentions légales') {
+      popupTitleElement.textContent = 'Mentions légales';
+      popupTextElement.textContent = 'Votre texte de mentions légales ici.';
+    }
+    setTimeout(() => {
+      popupElement.classList.add('show');
+    }, 200);
+  });
 });
 
 closeElement.addEventListener('click', () => {
@@ -403,7 +414,8 @@ closeElement.addEventListener('click', () => {
 
 // Ajoutez cet événement de clic sur l'ensemble du document (body)
 document.body.addEventListener('click', (event) => {
-  if (!popupElement.contains(event.target) && !mentionsElement.contains(event.target)) {
+  if (!popupElement.contains(event.target) && !mentionsElements[0].contains(event.target) && !mentionsElements[1].contains(event.target)) {
     popupElement.classList.remove('show');
   }
 });
+
