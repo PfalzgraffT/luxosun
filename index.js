@@ -385,25 +385,14 @@ function toggleBannerVisibility() {
 window.addEventListener('scroll', toggleBannerVisibility);
 
 
-const mentionsElements = document.querySelectorAll('.mentions');
+const mentionsElement = document.querySelector('.mentions');
 const popupElement = document.querySelector('.popup');
 const closeElement = document.querySelector('.close');
-const popupTitleElement = document.querySelector('.popup-title');
-const popupTextElement = document.querySelector('.popup-text');
 
-mentionsElements.forEach((mentionsElement) => {
-  mentionsElement.addEventListener('click', () => {
-    if (mentionsElement.textContent === 'Politique de confidentialité') {
-      popupTitleElement.textContent = 'Politique de confidentialité';
-      popupTextElement.textContent = 'Votre texte de politique de confidentialité ici.';
-    } else if (mentionsElement.textContent === 'Mentions légales') {
-      popupTitleElement.textContent = 'Mentions légales';
-      popupTextElement.textContent = 'Luxosun SAS, 2 T Rue Spitalieri 06000 Nice, capital social de 1000 Euros, 953 667 300 00016, luxosun.info@gmail.com, téléphone, numéro identifiant TVA, Identité de l'hébergeur, Entreprise en charge de stocker sur ses serveurs les données du site internet du site : nom ou dénomination sociale, adresse et numéro de téléphone';
-    }
-    setTimeout(() => {
-      popupElement.classList.add('show');
-    }, 200);
-  });
+mentionsElement.addEventListener('click', () => {
+  setTimeout(() => {
+    popupElement.classList.add('show');
+  }, 200);
 });
 
 closeElement.addEventListener('click', () => {
@@ -414,9 +403,10 @@ closeElement.addEventListener('click', () => {
 
 // Ajoutez cet événement de clic sur l'ensemble du document (body)
 document.body.addEventListener('click', (event) => {
-  if (!popupElement.contains(event.target) && !mentionsElements[0].contains(event.target) && !mentionsElements[1].contains(event.target)) {
+  if (!popupElement.contains(event.target) && !mentionsElement.contains(event.target)) {
     popupElement.classList.remove('show');
   }
 });
+
 
 
