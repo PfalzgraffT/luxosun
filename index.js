@@ -398,7 +398,7 @@ mentionsElements.forEach((mentionsElement) => {
       popupTextElement.textContent = 'Votre texte de politique de confidentialité ici.';
     } else if (mentionsElement.textContent === 'Mentions légales') {
       popupTitleElement.textContent = 'Mentions légales';
-      popupTextElement.textContent = 'Luxosun SAS, 2 T Rue Spitalieri 06000 Nice, capital social de 1000 Euros, 953 667 300 00016, luxosun.info@gmail.com, "téléphone", "numéro identifiant TVA", "Identité de l'hébergeur,(Entreprise en charge de stocker sur ses serveurs les données du site internet du site : nom ou dénomination sociale, adresse et numéro de téléphone)';
+      popupTextElement.textContent = 'Luxosun SAS, 2 T Rue Spitalieri 06000 Nice, capital social de 1000 Euros, 953 667 300 00016, luxosun.info@gmail.com, "téléphone", "numéro identifiant TVA", "Identité de l'hébergeur, Entreprise en charge de stocker sur ses serveurs les données du site internet du site : nom ou dénomination sociale, adresse et numéro de téléphone';
     }
     setTimeout(() => {
       popupElement.classList.add('show');
