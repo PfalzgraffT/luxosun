@@ -385,26 +385,36 @@ function toggleBannerVisibility() {
 window.addEventListener('scroll', toggleBannerVisibility);
 
 
-const mentionsElement = document.querySelector('.mentions');
+const mentionElement = document.querySelector('.mention');
+const confidentialiteElement = document.querySelector('.confidentialite');
 const popupElement = document.querySelector('.popup');
-const closeElement = document.querySelector('.close');
+const poopupElement = document.querySelector('.poopup');
+const closeElements = document.querySelectorAll('.close');
 
-mentionsElement.addEventListener('click', () => {
-  setTimeout(() => {
-    popupElement.classList.add('show');
-  }, 200);
+mentionElement.addEventListener('click', () => {
+  popupElement.classList.add('show');
+  poopupElement.classList.remove('show'); // Ferme la pop-up "Politique de confidentialité" si elle est ouverte
 });
 
-closeElement.addEventListener('click', () => {
-  setTimeout(() => {
-    popupElement.classList.remove('show');
-  }, 200);
+confidentialiteElement.addEventListener('click', () => {
+  poopupElement.classList.add('show');
+  popupElement.classList.remove('show'); // Ferme la pop-up "Mentions légales" si elle est ouverte
 });
 
-// Ajoutez cet événement de clic sur l'ensemble du document (body)
-document.body.addEventListener('click', (event) => {
-  if (!popupElement.contains(event.target) && !mentionsElement.contains(event.target)) {
+closeElements.forEach((closeElement) => {
+  closeElement.addEventListener('click', () => {
     popupElement.classList.remove('show');
+    poopupElement.classList.remove('show');
+  });
+});
+
+document.addEventListener('click', (event) => {
+  if (
+    (!popupElement.contains(event.target) && !mentionElement.contains(event.target)) &&
+    (!poopupElement.contains(event.target) && !confidentialiteElement.contains(event.target))
+  ) {
+    popupElement.classList.remove('show');
+    poopupElement.classList.remove('show');
   }
 });
 
