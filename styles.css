@@ -663,7 +663,7 @@ input:invalid + .error-message {
   display: block;
 }
 
-.mentions {
+.mention, .confidentialite {
   display: flex;
   text-decoration: underline;
   color: grey;
@@ -672,10 +672,11 @@ input:invalid + .error-message {
   cursor: pointer;
 }
 
-.mentions:hover {
+.mention:hover, .confidentialite:hover {
   color: black;
 }
-.popup {
+
+.popup, .poopup {
   display: none;
   position: fixed;
   width: 50%;
@@ -691,14 +692,14 @@ input:invalid + .error-message {
   z-index: 2;
 }
 
-.popup.show {
+.popup.show, .poopup.show {
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 1;
 }
 
-.popup-content {
+.popup-content, .poopup-content {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 5px;
