@@ -789,6 +789,53 @@ input:invalid + .error-message {
   .contact-form {
     order: 1; /* Mettre le formulaire en premier */
   }
+  
+  .buttons .button-left, .buttons .button-right {
+    height: 6vh;
+    font-size: 2vw;
+  }
+  
+  .container .content h2 {
+    font-size: 8vw;
+  }
+  .container .content p {
+    font-size: 3vw;
+  }
+  .flag {
+    height: 3vw;
+    width: 3vw;
+  }
+
+  .circle.open {
+    width: 100%;
+    padding: 0.5em;
+  }
+  .circle.open .circle-text {
+    width: 100%;
+    font-size: 2vw;
+  }
+  .custom-content {
+    display: block;
+  }
+  .custom-left {
+    width: 100%;
+  }
+  .custom-left img {
+    width: 96%;
+    padding: 0.5em;
+  }
+  .custom-right {
+    width: 100%;
+  }
+  .custom-right h3 {
+    font-size: 4vw;
+  }
+  .custom-image {
+    max-width: 25vw;
+  }
+  .custom-right p {
+    font-size: 3vw;
+  }
 }
 /*.whatsapp-button {
   width: 40px;
