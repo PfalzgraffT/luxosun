@@ -876,4 +876,10 @@ input:invalid + .error-message {
   background-color: #888; /* Couleur de la poignée de la barre de défilement */
 }
 
-
+@media screen and (max-width: 480px) {
+  /* Styles spécifiques pour le format téléphone en affichage portrait */
+  .buttons .button-left {
+    height: 6vh;
+    font-size: 2.5vw;
+  }
+}
