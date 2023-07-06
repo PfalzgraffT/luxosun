@@ -837,7 +837,20 @@ input:invalid + .error-message {
     font-size: 3vw;
   }
   .contact-form {
-    margin: 30px;
+    margin: 0px;
+  }
+    .contact-container h3 {
+      font-size: 4em;
+  }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 90%;
+  }
+    .form-row {
+      text-align: center;
+  }
 }
 /*.whatsapp-button {
   width: 40px;
