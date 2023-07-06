@@ -836,6 +836,8 @@ input:invalid + .error-message {
   .custom-right p {
     font-size: 3vw;
   }
+  .contact-form {
+    margin: 30px;
 }
 /*.whatsapp-button {
   width: 40px;
