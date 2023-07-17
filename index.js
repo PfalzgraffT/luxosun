@@ -31,57 +31,57 @@ function animate() {
   });
 }
 
-const inputNom = document.querySelector('#nom');
-const inputPrenom = document.querySelector('#prenom');
-const inputTelephone = document.querySelector('#telephone');
+//const inputNom = document.querySelector('#nom');
+//const inputPrenom = document.querySelector('#prenom');
+//const inputTelephone = document.querySelector('#telephone');
 
-inputNom.addEventListener('keypress', function(event) {
-  const keyCode = event.keyCode;
-  if (/[0-9]/.test(String.fromCharCode(keyCode))) {
-    event.preventDefault();
-  }
-});
+//inputNom.addEventListener('keypress', function(event) {
+  //const keyCode = event.keyCode;
+  //if (/[0-9]/.test(String.fromCharCode(keyCode))) {
+    //event.preventDefault();
+  //}
+//});
 
-inputPrenom.addEventListener('keypress', function(event) {
-  const keyCode = event.keyCode;
-  if (/[0-9]/.test(String.fromCharCode(keyCode))) {
-    event.preventDefault();
-  }
-});
+//inputPrenom.addEventListener('keypress', function(event) {
+  //const keyCode = event.keyCode;
+ // if (/[0-9]/.test(String.fromCharCode(keyCode))) {
+    //event.preventDefault();
+  //}
+//});
 
-inputTelephone.addEventListener('keypress', function(event) {
-  const keyCode = event.keyCode;
-  if (/[A-Za-z]/.test(String.fromCharCode(keyCode))) {
-    event.preventDefault();
-  }
-});
+//inputTelephone.addEventListener('keypress', function(event) {
+  //const keyCode = event.keyCode;
+ // if (/[A-Za-z]/.test(String.fromCharCode(keyCode))) {
+   // event.preventDefault();
+ // }
+//});
 
-const projetInput = document.getElementById('projet');
+//const projetInput = document.getElementById('projet');
 
-projetInput.addEventListener('input', () => {
+//projetInput.addEventListener('input', () => {
 
-  projetInput.style.height = 'auto'; // Réinitialise la hauteur de l'input à "auto"
-  projetInput.style.height = `${projetInput.scrollHeight + 2}px`; // Ajuste la hauteur de l'input en fonction de son contenu
-});
+  //projetInput.style.height = 'auto'; // Réinitialise la hauteur de l'input à "auto"
+ // projetInput.style.height = `${projetInput.scrollHeight + 2}px`; // Ajuste la hauteur de l'input en fonction de son contenu
+//});
 
-projetInput.style.height = `${projetInput.scrollHeight + 2}px`; // Ajuste la hauteur initiale de l'input en fonction de son contenu
+//projetInput.style.height = `${projetInput.scrollHeight + 2}px`; // Ajuste la hauteur initiale de l'input en fonction de son contenu
 
 
 
-const formulaire = document.getElementById('formulaire');
-const messageErreur = document.getElementById('message-erreur');
+//const formulaire = document.getElementById('formulaire');
+//const messageErreur = document.getElementById('message-erreur');
 
-formulaire.addEventListener('submit', (e) => {
+//formulaire.addEventListener('submit', (e) => {
   // Vérifier la validité des champs du formulaire
-  if (!formulaire.checkValidity()) {
-    e.preventDefault(); // Empêche la soumission du formulaire
+  //if (!formulaire.checkValidity()) {
+   // e.preventDefault(); // Empêche la soumission du formulaire
     
-    messageErreur.textContent = 'Veuillez vérifier les données saisies.';
-    messageErreur.style.display = 'block';
-  } else {
-    messageErreur.style.display = 'none';
-  }
-});
+    //messageErreur.textContent = 'Veuillez vérifier les données saisies.';
+   // messageErreur.style.display = 'block';
+ // } else {
+   // messageErreur.style.display = 'none';
+ // }
+//});
 
 
 function showSlide(index) {
