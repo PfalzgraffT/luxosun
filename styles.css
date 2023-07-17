@@ -604,7 +604,7 @@ body {
   width: 100%;
   text-align: center;
 }
-.contact-form, .contact-first {
+.contact-first {
   flex: 1;
   margin: 0 10%;
   max-width: 600px;
