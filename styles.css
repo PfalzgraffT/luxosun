@@ -459,6 +459,27 @@ body {
   order: 1; /* Inversion de l'ordre d'affichage */
 }
 
+.button-tarif {
+  text-align-last: center;
+}
+
+.tarif {
+  border-radius: 25%;
+  background-color: #C9AC81;
+  color: #622323;
+  font-weight: bold;
+  border: none;
+  font-size: 2vw;
+  padding: 0.5em;
+  margin-bottom: 1vw;
+}
+
+.tarif:hover {
+  color: white;
+  transform: scale(0.9);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
 .testimonial-container {
   background: linear-gradient(to bottom right, #622323 50%, #ada8bf 50%); /* Dégradé diagonal */
   overflow: hidden; /* Masque les contenus débordant du container */
