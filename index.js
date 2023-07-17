@@ -1,4 +1,6 @@
-
+window.addEventListener('beforeunload', function() {
+  window.scrollTo(0, 0);
+});
 
 
 const testimonialSlides = Array.from(document.querySelectorAll('.testimonial-slide'));
