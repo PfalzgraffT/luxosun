@@ -168,7 +168,7 @@ body {
   font-size: 1vw;
   background-color: #ada8bf;
 }
-.language {
+.language, .language-tarif {
   display: flex;
   flex-direction: row;
   position: absolute;
