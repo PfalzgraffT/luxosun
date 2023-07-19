@@ -968,6 +968,17 @@ input:invalid + .error-message {
   background-color: #888; /* Couleur de la poignée de la barre de défilement */
 }
 
+.back {
+  position: absolute;
+  margin-left: 1em;
+  font-size: 4vw;
+  transition: transform 0.5s;
+}
+.back:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 .tarifs-container {
   color: #C9AC81;
   margin: 0;
