@@ -967,3 +967,68 @@ input:invalid + .error-message {
 ::-webkit-scrollbar-thumb {
   background-color: #888; /* Couleur de la poignée de la barre de défilement */
 }
+
+.tarifs-container {
+  color: #C9AC81;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.tarif-container {
+  background-color: #622323;
+  width: 100%;
+  padding-top: 30px;
+  height: 50vh;
+}
+
+.tarif-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.animal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.others {
+  margin-top: 5em;
+}
+.cat, .dog, .others {
+  flex-basis: 50%; /* Ajuster la largeur des sections selon vos préférences */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cat, .dog {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cat img, .dog img, .others img {
+  border-radius: 25%;
+  height: auto;
+  width: 50%;
+}
+
+.description-cat, .description-dog {
+  padding: 0 20px;
+}
+
+.container-contact {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  background-color: #622323;
+}
+
+.contact-tarif {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 15px
+}
