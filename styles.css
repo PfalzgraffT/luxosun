@@ -991,7 +991,7 @@ input:invalid + .error-message {
   background-color: #622323;
   width: 100%;
   padding-top: 30px;
-  height: 50vh;
+  height: 75vh;
 }
 
 .tarif-title {
