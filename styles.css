@@ -472,12 +472,12 @@ body {
   font-size: 2vw;
   padding: 0.5em;
   margin-bottom: 1vw;
+  transition: transform 0.5s;
 }
 
 .tarif:hover {
   color: white;
   transform: scale(0.9);
-  transition: transform 0.5s;
   cursor: pointer;
 }
 .testimonial-container {
