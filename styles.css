@@ -829,7 +829,7 @@ input:invalid + .error-message {
     width: 70%;
   }
   .instagram, .facebook {
-    font-size: 15vw;
+    inline-size: auto;
   }
   .mention, .confidentialite {
     font-size: 2.5vw
