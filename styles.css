@@ -828,6 +828,9 @@ input:invalid + .error-message {
   .contact-first {
     width: 70%;
   }
+  .instagram, .facebook {
+    font-size: 15vw;
+  }
 }
 
 
