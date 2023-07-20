@@ -825,6 +825,9 @@ input:invalid + .error-message {
   .tarif {
     font-size: 3vw;
   }
+  .contact-first {
+    width: 70%;
+  }
 }
 
 
