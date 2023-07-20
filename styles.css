@@ -855,6 +855,9 @@ input:invalid + .error-message {
   .testimonial-slide {
     justify-content: center;
   }
+  .testimonial-background {
+    height: 30vh;
+  }
 }
 
 /* Styles pour les écrans de taille inférieure ou égale à 768px (format mobile) */
