@@ -862,10 +862,16 @@ input:invalid + .error-message {
     text-align: -webkit-center;
   }
   .tarif-list {
+    list-style: none;
+    padding: 5px;
+    font-size: 1.2em;
+    line-height: 2em;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
     font-size: 2em;
-    width: 80%;
     margin-top: 3em;
-    line-height: 2.5em;
+}
   }
   .contact-tarif {
    font-size: 1.5em;
