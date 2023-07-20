@@ -870,7 +870,7 @@ input:invalid + .error-message {
     margin: 0px;
   }
     .contact-container h3 {
-      font-size: 4em;
+      font-size: 3em;
   }
     input[type="text"],
     input[type="email"],
