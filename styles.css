@@ -861,15 +861,11 @@ input:invalid + .error-message {
   .tarif-container {
     text-align: -webkit-center;
   }
-  .ul{
-    margin-top: 3em;
-    line-height: 2.5em;
-    font-size: 2em;
-  }
   .tarif-list {
     font-size: 2em;
     width: 80%;
-    margin-top: 4em;
+    margin-top: 3em;
+    line-height: 2.5em;
   }
   .contact-tarif {
    font-size: 1.5em;
