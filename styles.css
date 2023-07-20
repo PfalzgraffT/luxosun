@@ -815,6 +815,13 @@ input:invalid + .error-message {
     font-size: 4vw;
     line-height: 2em;
   }
+  .circle {
+    width: 10vw;
+    height: 10vw;
+}
+  .circle-container {
+    top: 55%;
+  }
 }
 
 
