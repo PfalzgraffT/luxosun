@@ -858,6 +858,14 @@ input:invalid + .error-message {
   .testimonial-background {
     height: 30vh;
   }
+  .tarif-container {
+    text-align: -webkit-center;
+  }
+  ul {
+    margin-top: 3em;
+    line-height: 2.5em;
+    font-size: 2em;
+  }
   .tarif-list {
     font-size: 2em;
     width: 80%;
