@@ -517,7 +517,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end; /* Alignement en bas pour les slides non actives */
+  justify-content: center;
   text-align: center;
   padding: 20px;
   position: relative;
