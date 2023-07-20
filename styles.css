@@ -1070,8 +1070,8 @@ input:invalid + .error-message {
   padding: 5px;
   font-size: 1.2em;
   line-height: 1.5em;
-  width: 400px; /* Largeur fixe de la liste */
-  height: 300px; /* Hauteur fixe de la liste */
+  width: 90%;
+  height: auto;
   margin: 0 auto; /* Pour centrer la liste horizontalement */
 }
 
