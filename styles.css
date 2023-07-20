@@ -805,6 +805,106 @@ input:invalid + .error-message {
   transform: scale(0.9);
 }
 
+/* Barre de défilement pour les navigateurs Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Couleur de fond de la piste de la barre de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Couleur de la poignée de la barre de défilement */
+}
+
+.back {
+  position: absolute;
+  margin-left: 1em;
+  font-size: 4vw;
+  transition: transform 0.5s;
+}
+.back:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.tarifs-container {
+  color: #C9AC81;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.tarif-container {
+  background-color: #622323;
+  width: 100%;
+  padding-top: 30px;
+  height: 75vh;
+}
+
+.tarif-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.tarif-list {
+  list-style: none;
+  padding: 5px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  width: 90%;
+  height: auto;
+  margin: 0 auto; /* Pour centrer la liste horizontalement */
+}
+
+.animal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.others {
+  margin-top: 5em;
+}
+.cat, .dog, .others {
+  flex-basis: 50%; /* Ajuster la largeur des sections selon vos préférences */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cat, .dog {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cat img, .dog img, .others img {
+  border-radius: 25%;
+  height: auto;
+  width: 50%;
+}
+
+.description-cat, .description-dog {
+  padding: 0 20px;
+}
+
+.container-contact {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  background-color: #622323;
+}
+
+.contact-tarif {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 15px
+}
+
+
 /* Styles pour les écrans de taille inférieure ou égale à 600px (format mobile) */
 @media (max-width: 600px) {
   .container .content h2 {
@@ -1029,102 +1129,3 @@ input:invalid + .error-message {
   align-self: flex-end;
 }
 */
-
-/* Barre de défilement pour les navigateurs Webkit (Chrome, Safari) */
-::-webkit-scrollbar {
-  width: 10px; /* Largeur de la barre de défilement */
-}
-
-::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Couleur de fond de la piste de la barre de défilement */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #888; /* Couleur de la poignée de la barre de défilement */
-}
-
-.back {
-  position: absolute;
-  margin-left: 1em;
-  font-size: 4vw;
-  transition: transform 0.5s;
-}
-.back:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-.tarifs-container {
-  color: #C9AC81;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
-.tarif-container {
-  background-color: #622323;
-  width: 100%;
-  padding-top: 30px;
-  height: 75vh;
-}
-
-.tarif-title {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.tarif-list {
-  list-style: none;
-  padding: 5px;
-  font-size: 1.2em;
-  line-height: 1.5em;
-  width: 90%;
-  height: auto;
-  margin: 0 auto; /* Pour centrer la liste horizontalement */
-}
-
-.animal-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.others {
-  margin-top: 5em;
-}
-.cat, .dog, .others {
-  flex-basis: 50%; /* Ajuster la largeur des sections selon vos préférences */
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.cat, .dog {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.cat img, .dog img, .others img {
-  border-radius: 25%;
-  height: auto;
-  width: 50%;
-}
-
-.description-cat, .description-dog {
-  padding: 0 20px;
-}
-
-.container-contact {
-  width: 100%;
-  padding: 0;
-  text-align: center;
-  background-color: #622323;
-}
-
-.contact-tarif {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 30px 15px
-}
