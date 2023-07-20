@@ -861,7 +861,7 @@ input:invalid + .error-message {
   .tarif-container {
     text-align: -webkit-center;
   }
-  ul {
+  .tarif-container ul {
     margin-top: 3em;
     line-height: 2.5em;
     font-size: 2em;
