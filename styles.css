@@ -834,6 +834,27 @@ input:invalid + .error-message {
   .mention, .confidentialite {
     font-size: 2.5vw
   }
+  .testimonial-slide p {
+    font-size: 2vw;
+  }
+  .notation {
+    width: 50%;
+  }
+  .testimonial-slide h1 {
+    font-size: 3vw;
+  }
+  .img-testimonial {
+    width: 5vw;
+  }
+  .testimonial-slide.active {
+    height: 78%;
+  }
+  .testimonial-slide:not(.active) {
+    height: 70%;
+  }
+  .testimonial-slide {
+    justify-content: center;
+  }
 }
 
 /* Styles pour les écrans de taille inférieure ou égale à 768px (format mobile) */
