@@ -423,7 +423,7 @@ document.addEventListener('click', (event) => {
 function redirectToMainPage() {
   window.location.href = "index.html";
 }
-function redirectToMainPageInEnglish() {
+function redirectToEnglishPage() {
   window.location.href = "english.html";
 }
 
