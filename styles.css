@@ -999,6 +999,16 @@ input:invalid + .error-message {
   font-weight: bold;
 }
 
+.tarif-list {
+  list-style: none;
+  padding: 5px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  width: 400px; /* Largeur fixe de la liste */
+  height: 300px; /* Hauteur fixe de la liste */
+  margin: 0 auto; /* Pour centrer la liste horizontalement */
+}
+
 .animal-container {
   display: flex;
   flex-wrap: wrap;
