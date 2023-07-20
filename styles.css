@@ -881,6 +881,9 @@ input:invalid + .error-message {
     .form-row {
       text-align: center;
   }
+  .contact-container h4 {
+  font-size: 1.1em;
+}
 }
 /*.whatsapp-button {
   width: 40px;
