@@ -858,6 +858,14 @@ input:invalid + .error-message {
   .testimonial-background {
     height: 30vh;
   }
+  .tarif-list {
+    font-size: 2em;
+    width: 80%;
+    margin-top: 4em;
+  }
+  .contact-tarif {
+   font-size: 1.5em;
+  }
 }
 
 /* Styles pour les écrans de taille inférieure ou égale à 768px (format mobile) */
