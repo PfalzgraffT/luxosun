@@ -573,8 +573,12 @@ body {
   font-size: 1.5vw;
 }
 
-.testimonial-slide p{
+.testimonial-slide p.active{
   font-size: 1vw;
+  padding:0.5em;
+}
+.testimonial-slide p:not(.active){
+  font-size: 0.8vw;
   padding:0.5em;
 }
 
