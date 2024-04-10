@@ -427,3 +427,10 @@ function redirectToEnglishPage() {
   window.location.href = "english.html";
 }
 
+function openMail() {
+  // URL générique pour les services de messagerie
+  var mailtoLink = "mailto:luxosun@outlook.com";
+
+  // Ouvrir un nouvel onglet avec le client de messagerie par défaut de l'utilisateur
+  window.open(mailtoLink, "_blank");
+}

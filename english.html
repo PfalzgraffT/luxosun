@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0-beta3/css/all.min.css">
   <link rel="preload" href="monaco.jpg" as="image">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Luxosun</title>
 </head>
 <body>
   <div class="banner">
@@ -13,8 +14,8 @@
       <img src="logo-luxosun.png" alt="logo" class="logo" />
     </div>
     <div class="buttons">
-      <button class="button-left bl" onmouseenter="showCircle(event)" onmouseleave="hideCircle(event)" onclick="redirectTo('one')">Secondary Residence Owner</button>
-      <button class="button-right bl2" onmouseenter="showCircle(event)" onmouseleave="hideCircle(event)" onclick="redirectTo('two')">The desire to travel</button>
+      <button class="button-left bl" onmouseenter="showCircle(event)" onmouseleave="hideCircle(event)" onclick="redirectTo('one')">Property owner</button>
+      <button class="button-right bl2" onmouseenter="showCircle(event)" onmouseleave="hideCircle(event)" onclick="redirectTo('two')">Pet sitting</button>
     </div>
   <div class="language">
     <a href="index.html" class="flag french">
@@ -28,8 +29,7 @@
     <div class="content">
       <h2 style="font-size: 3em;">Welcome</h2>
       <p>Luxosun is a family business located on the Côte d'Azur and Monaco.
-        We offer luxury on-demand services such as concierge service, maintenance of your main and secondary residences while keeping your pets during your prolonged absences.</p>
-    </div>
+        We offer bespoke concierge services, managing your main and secondary residences while keeping your pets during your prolonged absences.    </div>
   </div>
   <div class="Diviseur">
       <img src="Diviseur.png" alt="Diviseur" class="Diviseur-image"/>
@@ -39,12 +39,11 @@
     <div class="circle-container">
       <div class="circle">
         <img src="house.svg" alt="image1" class="circle-image" />
-        <div class="circle-text">Preparation of your arrival such as organising household cleaning before arrival and end of stay, shopping, organising weekends on request and many more.</div>
+        <div class="circle-text">Complete assistance to owners to maximise their rental income worry free. Based in Nice and its surroundings, we simplify the management of your short-term rental properties, freeing you from everyday worries.</div>
       </div>
       <div class="circle">
         <img src="lock.svg" alt="image2" class="circle-image" />
-        <div class="circle-text">A sense of security throughout the year with our regular visits service, mail recovery and blinds opening.
-        </div>
+        <div class="circle-text">A sense of security throughout the year with our secondary residences service.</div>
       </div>
       <div class="circle">
         <img src="dog.svg" alt="image3" class="circle-image" />
@@ -60,34 +59,36 @@
   
   
   
-  <div class="Diviseur" id="one">
+  <div class="Diviseur">
     <img src="Diviseur.png" alt="Diviseur" class="Diviseur-image"/>
 </div>
-<div class="custom-container animatedOpacity">
+<div class="custom-container animatedOpacity" id="one">
     <div class="custom-content">
       <div class="custom-left">
         <img src="view_proprio.jpg" alt="image" />
       </div>
       <div class="custom-right">
-        <h3>Secondary <br />Residence Owner</h3>
+        <h3>Property owner</h3>
         <div class="custom-image">
           <img src="bande-couleur.svg" alt="image" />
         </div>
-        <p>Luxosun takes care of your home.
-            We intervene to meet your needs, from the daily inspection to the repair of various damages, through household / gardening and pool maintenance services, etc.
-            Because we know that your time is precious, our mission is your satisfaction and peace of mind.
-            In addition, we will put you in contact with services providers to organise activities, baby-sitting, airport transfer and other additional services which you may need during your stay.
-            To get to know our wide range of services, contact us today and we will take care of meeting all your needs.</p>
-      </div>
+        <p>Luxosun takes care of your properties, whether for regular short-term rentals or for one-time visit throughout the year.
+          We intervene to meet your needs, from the check-in of tenants on site with the handover of the keys and presentation of the place, housekeeping between two rentals, the hosting of service providers of various repairs, as well as gardening and pool maintenance. Because we know that your time is precious, our mission is your satisfaction and your peace of mind. In addition, we contact you with trusted providers to arrange activities, baby-sitting, airport transfer and other additional services on request that you may need during your stay.</p>
+          <div class="button-tarif">
+            <a href="offre-english.html">
+              <button class="tarif">Our offers</button>
+            </a>
+          </div>
+        </div>
     </div>
   </div>
-  <div class="Diviseur" id="two">
+  <div class="Diviseur">
     <img src="Diviseur.png" alt="Diviseur" class="Diviseur-image"/>
 </div>
-<div class="custom-container animatedOpacity custom-container-reverse">
+<div class="custom-container animatedOpacity custom-container-reverse" id="two">
     <div class="custom-content">
         <div class="custom-right">
-            <h3>The desire to travel</h3>
+            <h3>Pet sitting</h3>
             <div class="custom-image">
               <img src="bande-couleur.svg" alt="image" />
             </div>
@@ -111,13 +112,14 @@
 <div class="contact-container">
  <div class="contact-first">
     <h3>Get in touch</h3>
-    <h4><i class="fa-solid fa-phone" style="color: #c9ac81; font-size: 1em;"></i> 0788707657</h4>
-    <h4><i class="fa-solid fa-envelope" style="color: #c9ac81; font-size: 1em"></i> luxosun@outlook.com</h4>
+    <h4><i class="fa-solid fa-phone" style="color: #c9ac81; font-size: 1em;"></i> 07.88.70.76.57</h4>
+    <h4><i class="fa-solid fa-envelope" style="color: #c9ac81; font-size: 1em"></i> <span onclick="openMail()" style="cursor: pointer;">luxosun@outlook.com</span></h4>
     <div class="reseaux-sociaux">
       <p>Find us on social medias :</p>
       <div class="reseaux-sociaux-icons">
         <a href="https://instagram.com/luxosun_?igshid=MzRIODBiNWFILZA==" target="_blank" class="icone-reseau-sociaux"><img src="instagram.svg" alt="instagram" class="instagram"></a>
         <a href="https://www.facebook.com/profile.php?id=100092581039383" target="_blank" class="icone-reseau-sociaux"><img src="facebook.svg" alt="facebook" class="facebook"></a>
+        <a href="https://www.linkedin.com/company/luxosun/" target="_blank" class="icone-reseau-sociaux"><img src="linkedin.svg" alt="linkedin" class="linkedin"></a>
       </div>
     </div>
   </div>
@@ -126,24 +128,24 @@
         <div class="testimonial-carousel">
           <div class="testimonial-slide active ">
               <!-- Contenu de la première slide -->
-              <span class="avatar"><img src="avatar.svg" alt="avatar" class="img-testimonial"></span>
-              <h1>Thomas, 06</h1>
-              <p>I recently had the pleasure of using Luxosun, it was an exceptional experience. They went beyond my expectations to ensure my satisfaction. I recommend Luxosun to anyone who needs a petsitter.</p>
+              <!--<span class="avatar"><img src="avatar.svg" alt="avatar" class="img-testimonial"></span>-->
+              <h1>Marie, 06</h1>
               <img src="notation.svg" alt="notation" class="notation">
+              <p>Je la recommande vivement! Un grand soin des animaux, respect du client. J’ai eu des nouvelles et photos à chaque passage. Une vraie tranquillité de savoir nos compagnons a quatre pattes entre ses mains 🫶🏻</p>
           </div>
             <div class="testimonial-slide">
                 <!-- Contenu de la deuxième slide -->
-              <span class="avatar"><img src="avatar.svg" alt="avatar" class="img-testimonial"></span>
-              <h1>Alice, 06</h1>
-              <p>Great service, efficient and professional, my pets and I are pleased! We recommend and we will use Luxosun in the future. Bravo!</p>
+              <!--<span class="avatar"><img src="avatar.svg" alt="avatar" class="img-testimonial"></span>-->
+              <h1>Saneva, 06</h1>
               <img src="notation.svg" alt="notation" class="notation">
+              <p>J’ai retrouvé mon chat heureux <3 première année ou je passe des vacances sereines .. le service de Luxosun est au top et je remercie mélany pour son professionnalisme sa douceur et son amour des animaux à l’année prochaine ou même avant ..maintenant je vais aussi partir en week-end 😂</p>
             </div>
             <div class="testimonial-slide">
                 <!-- Contenu de la troisième slide -->
-              <span class="avatar"><img src="avatar.svg" alt="avatar" class="img-testimonial"></span>
-              <h1>Frederic, 06</h1>
-              <p>Professional and caring, Luxosun accompanied me from the beginning to meet all my expectations. Trusted company, thank you!</p>
+              <!--<span class="avatar"><img src="avatar.svg" alt="avatar" class="img-testimonial"></span>-->
+              <h1>Chantal, 06</h1>
               <img src="notation.svg" alt="notation" class="notation">
+              <p>Nous avons apprécié le professionnalisme et la gentillesse de Melany. Un rapport journalier nous a été envoyé. Je recommande vivement.</p>
             </div>
           <!-- Contenu du carrousel de témoignages -->
         </div>
@@ -217,7 +219,7 @@ Our website is not intended for children under 16 years of age. We do not knowin
     <!-- Autres éléments de la pop-up -->
     </div>
   </div>
-  <div style="color: grey; text-align: center;">&copy; 2023 Luxosun. All right reserved.</div>
+  <div style="color: grey; text-align: center;">&copy; 2024 Luxosun. All right reserved.</div>
   <div class="button-container">
     <div class="back-to-top">
       <!-- Contenu du bouton pour remonter en haut du site -->
