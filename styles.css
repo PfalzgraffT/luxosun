@@ -935,7 +935,8 @@ input:invalid + .error-message {
 }
 .offers-container {
   width: 100%;
-  margin-top: 10em; /* Ajoutez un espace entre le banner-bis et l'offers-container */
+  margin-top: 20em; /* Ajoutez un espace entre le banner-bis et l'offers-container */
+  margin-bottom: 13em;
   text-align: center;
 }
 
@@ -1060,9 +1061,6 @@ input:invalid + .error-message {
   }
   .contact-container h4 {
   font-size: 1.1em;
-}
-.offers-container {
-  margin-top: 15em;
 }
 }
 /*.whatsapp-button {
@@ -1205,9 +1203,5 @@ input:invalid + .error-message {
   }
   .contact-tarif {
    font-size: 1.5em;
-  }
-  .offers-container {
-    margin-top: 23em;
-    margin-bottom: 10em;
   }
 }
