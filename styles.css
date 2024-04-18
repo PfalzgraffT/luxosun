@@ -860,7 +860,7 @@ input:invalid + .error-message {
 .tarif-list {
   list-style: none;
   padding: 5px;
-  font-size: 2vw;
+  font-size: 1vw;
   line-height: 1.5em;
   width: 90%;
   height: auto;
