@@ -1,88 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Nos offres</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our offers</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="offers.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Header Section with Logo and Back Button -->
     <div class="banner-bis">
-        <div class="back" onclick="redirectToMainPage()"><i class="fa-solid fa-arrow-left-long" style="color: #c9ac81;"></i></div>
+        <div class="back" onclick="redirectToEnglishPage()">
+            <i class="fa-solid fa-arrow-left-long" style="color: #c9ac81;"></i>
+        </div>
         <div class="logo">
-            <img src="logo-luxosun.png" alt="logo" class="logo" />
+            <img src="logo-luxosun.png" alt="Luxosun Logo" class="logo" />
         </div>
     </div>
-    <!--<div class="offers-container">
-        <h1 style="align-items: center; font-size: 5vw;">Gestion locative courte durée</h1>
-        <h2 style="font-weight: lighter; font-size: 2.5vw;">Tarif 22%<br/>des loyers encaissés*</h2>
-        <h4 style="margin-top:-1em; font-weight: 200; font-size: 0.8vw;;">*Hors frais ménage et consommables à reverser en intégralité</h4>
-        <div class="service-container">
-            <div class="offer-photo">
-                <img style="border-radius: 50%; position: absolute; height: 24vw; width: 18vw; left: 20%; top: -9em;" src="maison-offre.jpg" alt="image">
-                <img style="width: 17vw; position: relative; left: 50%; z-index: -2; height: 17vw;" src="jardin-offre.jpg" alt="image">
+
+    <!-- Offers Section -->
+    <div class="offers-container">
+        <h1 style="text-align: center; font-size: 5vw;">Conciergerie à Nice</h1>
+        <h2 style="font-weight: lighter; text-align: center; font-size: 3vw;">Nos services</h2>
+
+        <!-- Main Text Content -->
+        <div class="offers-text" style="display: flex; flex-direction: column; margin: 0 10vw;">
+            <h2 style="font-weight: 200;">Chers propriétaires: Simplifiez la gestion de vos locations avec Luxosun</h2>
+            <p style="font-weight: 200;">
+                Vous aimez gérer vous-même la commercialisation et les relations avec vos locataires, mais la logistique devient trop lourde à gérer tout au long de l'année ? Luxosun est là pour vous offrir une solution sur mesure. Nous vous accompagnons dans la gestion quotidienne de vos locations en prenant en charge toute la partie logistique. Vous gardez le contrôle total sur la commercialisation et les paiements, tandis que nous nous occupons de tout le reste.            </p>
+            <h2 style="font-weight: 200;">Chères agences immobilières: Renforcez vos équipes avec Luxosun</h2>
+            <p style="font-weight: 200;">
+                Vous êtes une agence immobilière proposant déjà des services de gestion de locations saisonnières au nom de vos clients ? Luxosun est prêt à renforcer vos équipes et à vous offrir une flexibilité supplémentaire pendant les périodes de forte demande ou pour répondre à des besoins ponctuels. Travaillons ensemble pour offrir à vos clients une expérience de location fluide et sans souci, tout en soulageant vos équipes des tâches logistiques.            </p>
+            <h2>Avec Luxosun, profitez de la tranquilité d'esprit en sachant que votre bien est entre de bonnes mains et que vos locataires bénéficieront d'un service irréprochable.</h2>
+        </div>
+
+        <!-- Services Icons with Text -->
+        <div class="services-container" style="display: flex; justify-content: space-around; margin-top: 2vw;">
+            <div class="service" style=" border-radius: 50%; padding: 1.5vw; background-color: #D7AE62;">
+                <div class="circle">
+                    <img src="onsite-checkin.png" alt="On-site check-in" style="width:10vw; height: 10vw">
+                </div>
+                <br>Check in sur place 7jrs/7,</br> toute l'année</p>
             </div>
-            <div class="offer-service">
-                <h2>Nos services</h2>
-                <ul style="line-height: 2.3vw; font-size: 1.4vw; text-align: justify;"><li>Conseil et recommandation pour attirer les voyageurs</li>
-                    <li>Rédaction et gestion de vos annonces</li>
-                    <li>Ajustement des tarifs en fonction des tendances du marché</li>
-                    <li>Gestion des réservations et prise en charge des voyageurs</li>
-                    <li>Arrivées et départs sur place</li>
-                    <li>Panier de bienvenue (à personnaliser)</li>
-                    <li>Gestion des ménages, blanchisserie et consommables</li>
-                    <li>Assistance aux voyageurs 7 jours sur 7</li>
-                    <li>Publicité du bien sur nos différents réseaux</li>
-                </ul>
-                <button class="btn-contact" onclick="openMail()">Nous contacter</button>
+            <div class="service" style=" border-radius: 50%; padding: 2.5vw; background-color: #C9AC81;">
+                <div class="circle">
+                    <img src="cleaning.png" alt="Cleaning in between rentals" style="width:10vw; height: 10vw">
+                </div>
+                <p>Ménage entre locations</br></p>
+            </div>
+            <div class="service" style=" border-radius: 50%; padding: 2.5vw; background-color: #BBAAA0;">
+                <div class="circle">
+                    <img src="linen-management.png" alt="Household linen management" style="width:10vw; height: 10vw">
+                </div>
+                <p>Gestion du linge de maison</br></p>
+            </div>
+            <div class="service" style=" border-radius: 50%; padding: 2.5vw; background-color: #ADA8BF;">
+                <div class="circle">
+                    <img src="rental-management.png" alt="Rental essentials management" style="width:10vw; height: 10vw">
+                </div>
+                <p>Gestion des essentiels de location</br></p>
             </div>
         </div>
-        <div class="custom-image" style="position: absolute; left: 25%; max-width: none;">
-            <img style="position: relative;" src="bande-couleur.svg" alt="image" />
-          </div>
-        <h1 style="align-items: center;margin-top: 3em;">Résidence secondaire</h1>
-        <div class="residence-container">
-            <div class="surveillance">
-                <h2>Surveillance de propriété</h2>
-                <ul style="line-height: 2.3vw; font-size: 1.4vw; text-align: justify;"><li>Ventilation de votre résidence</li>
-                    <li>Arrosage de vos plantes d'intérieur</li>
-                    <li>Relève du courrier et communication d'importantes informations</li>
-                    <li>Surveillance des points d'entrées</li>
-                    <li>Passage systématique après une intempérie</li>
-                    <li>Garde et gestion de vos clés</li>
-                </ul>
-                <h2>70€/mois</h2>
-            </div>
-            <div class="demande">
-                <h2>Sur demande</h2>
-                <ul style="line-height: 2.3vw; font-size: 1.4vw; text-align: justify;"><li>Présence pour accueillir les prestataires lors de travaux</li>
-                    <li>Présence lors de livraison</li>
-                    <li>Nettoyage des vitres</li>
-                    <li>Nettoyage des extérieurs</li>
-                    <li>Entretien piscine/spa</li>
-                    <li>Organisation de votre venue</li>
-                    <li>Installation de décoration pour différents évènements</li>
-                    <li>Autres demandes personnalisées</li>
-                </ul>
-                <h2>Sur devis</h2>
-            </div>
-        </div>-->
-        <!--<button class="btn-contact" onclick="openMail()">Nous contacter</button>-->
+
+        <!-- Call to Action -->
+        <div class="cta-section" style="text-align: center; margin-top: 3vw;">
+            <h2>Nos offres sont déterminées en fonction du type de votre bien et du nombre de couchages proposés à vos clients.</h2>
+            <h2>Contactez nous dès aujourd'hui pour obtenir votre devis personnalisé correspondant à vos attentes.</h2>
+            <button class="quote-button" onclick="openMail()">Demande de devis</button>
+        </div>
+
     </div>
-    <div class="container-contact" style=" color: #C9AC81; position: relative; bottom: 0px;">
-        <h3 class="tarif-title" style="padding-top: 10px;">Nous contacter</h3>
-        <div class="contact-tarif">
+    <!-- Color Band and Footer -->
+    <div class="custom-image">
+        <img src="bande-couleur.svg" alt="image" />
+      </div>
+
+    <div class="offers-container">
+      <h1 style="text-align: center; margin-top: 2vw;">Résidence secondaire</h1>
+    </div>
+
+    <div class="services-section">
+        <div class="service-block">
+            <h2>Surveillance de propriété</h2>
+            <ul>
+                <li>Ventilation de votre résidence</li>
+                <li>Arrosage de vos plantes d'intérieur</li>
+                <li>Relève du courrier</li>
+                <li>Communication d'importantes informations</li>
+                <li>Surveillance des points d'entrée</li>
+                <li>Passage systématique après intempérie</li>
+                <li>Garde et gestion de vos clés</li>
+                <li style="color:transparent;">.</li>
+            </ul>
+            <button class="quote-button" onclick="openMail()">Demande de devis</button>
+        </div>
+        <div class="service-block">
+            <h2>Sur demande</h2>
+            <ul>
+                <li>Accueil des prestataires lors de travaux</li>
+                <li>Présence lors de livraison</li>
+                <li>Nettoyage des vitres</li>
+                <li>Nettoyage des extérieurs</li>
+                <li>Entretien piscine/spa</li>
+                <li>Organisation de votre venue</li>
+                <li>Installation de décoration pour des évènements</li>
+                <li>Autres demandes personnalisées</li>
+            </ul>
+            <button class="quote-button" onclick="openMail()">Demande de devis</button>
+        </div>
+    </div>
+
+    <!-- Property Section -->
+    <div class="property-section">
+        <h2>Quelques biens où nous proposons nos services de conciergerie</h2>
+        <div class="property-gallery">
+            <a href="https://www.airbnb.fr/rooms/38794538?source_impression_id=p3_1726219995_P3bRYX4lg4nuLJZh" target="_blank">
+                <img src="appt1.webp" alt="Property 1">
+            </a>
+            <a href="https://www.airbnb.fr/rooms/1162122893493242245?source_impression_id=p3_1726220049_P3PXD7mAN17T6A1H" target="_blank">
+                <img src="appt2.webp" alt="Property 2">
+            </a>
+            <a href="https://www.airbnb.fr/rooms/1181754106916459389?source_impression_id=p3_1726220110_P39P6gGxGuo9-vwH" target="_blank">
+                <img src="appt3.webp" alt="Property 3">
+            </a>
+            <a href="https://www.airbnb.fr/rooms/38794538?source_impression_id=p3_1726219995_P3bRYX4lg4nuLJZhlive-server
+            " target="_blank">
+                <img src="appt4.webp" alt="Property 4" >
+            </a>
+            <a href="https://www.airbnb.fr/rooms/1183299949786239889?source_impression_id=p3_1726220208_P3194H9-NfK8Q6W1" target="_blank">
+                <img src="appt5.webp" alt="Property 5">
+            </a>
+        </div>
+    </div>
+    
+    <!-- Contact Information -->
+    <div class="container-contact">
+        <h3 class="tarif-title">Nous contacter</h3>
+        <div>
+            <div class="contact-tarif">
             <span>Par téléphone au 07.88.70.76.57</span>
-            <span onclick="openMail()" style="cursor: pointer;"> Par mail à luxosun@outlook.com</span>
+            <span onclick="openMail()" style="cursor: pointer;">Par mail à luxosun@outlook.com</span>
         </div>
+    </div>
         <div class="reseaux-sociaux" style="margin-top: -2vw;">
             <p>Retrouvez-nous sur les réseaux sociaux :</p>
             <div class="reseaux-sociaux-icons">
-              <a href="https://instagram.com/luxosun_?igshid=MzRIODBiNWFILZA==" target="_blank" class="icone-reseau-sociaux"><img src="instagram.svg" alt="instagram" class="instagram"></a>
-              <a href="https://www.facebook.com/profile.php?id=100092581039383" target="_blank" class="icone-reseau-sociaux"><img src="facebook.svg" alt="facebook" class="facebook"></a>
-              <a href="https://www.linkedin.com/company/luxosun/" target="_blank" class="icone-reseau-sociaux"><img src="linkedin.svg" alt="linkedin" class="linkedin"></a>
+                <a href="https://instagram.com/luxosun_?igshid=MzRIODBiNWFILZA==" target="_blank" class="icone-reseau-sociaux">
+                    <img src="instagram.svg" alt="Instagram" class="instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100092581039383" target="_blank" class="icone-reseau-sociaux">
+                    <img src="facebook.svg" alt="Facebook" class="facebook">
+                </a>
+                <a href="https://www.linkedin.com/company/luxosun/" target="_blank" class="icone-reseau-sociaux">
+                    <img src="linkedin.svg" alt="LinkedIn" class="linkedin">
+                </a>
             </div>
-          </div>
+        </div>
     </div>
 
 </body>

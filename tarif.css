@@ -1,0 +1,138 @@
+/* tarif.css - Styles spécifiques pour tarif.html et tarif-english.html */
+
+.back {
+  position: absolute;
+  margin-left: 2em;
+  /*margin-top: 2rem;*/
+  font-size: 3vw;
+  transition: transform 0.5s;
+  order: 1;
+}
+  .back:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .tarifs-container {
+    color: #C9AC81;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .tarif-container {
+    background-color: #622323;
+    width: 100%;
+    padding-top: 30px;
+    height: 75%;
+    padding-bottom: 1em
+  }
+  
+  .tarif-title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .tarif-list {
+    list-style: none;
+    padding: 5px;
+    font-size: 1vw;
+    line-height: 1.5em;
+    width: 90%;
+    height: auto;
+    margin: 0 auto; /* Pour centrer la liste horizontalement */
+  }
+  
+  .animal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .others {
+    margin-top: 5em;
+  }
+  .cat, .dog, .others {
+    flex-basis: 50%; /* Ajuster la largeur des sections selon vos préférences */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .cat, .dog {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .cat img, .dog img, .others img {
+    border-radius: 25%;
+    height: auto;
+    width: 50%;
+  }
+  
+  .description-cat, .description-dog {
+    padding: 0 20px;
+  }
+  
+  .container-contact {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background-color: #622323;
+  }
+  
+  .contact-tarif {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 15px
+  }
+
+  
+  .btn-contact {
+    background-color: #222222;
+    color:white;
+    font-weight: bold;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .btn-contact:hover {
+    transform: scale(0.9);
+  }
+  .residence-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+   
+    }
+  
+  
+  
+
+/* Media queries */
+@media (max-width: 768px) {
+    .tarif-list {
+        padding: 5vw;
+        font-size: 2vw;
+    }
+}
+
+.reseaux-sociaux {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ADA8BF;
+  font-weight: bold;
+}
+
+.instagram, .facebook, .linkedin {
+  transition: transform 0.3s;
+  width: 5vw;
+}
+
+.instagram:hover, .facebook:hover, .linkedin:hover {
+  transform: scale(0.9);
+}

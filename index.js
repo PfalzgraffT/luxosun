@@ -2,7 +2,6 @@ window.addEventListener('beforeunload', function() {
   window.scrollTo(0, 0);
 });
 
-
 const testimonialSlides = Array.from(document.querySelectorAll('.testimonial-slide'));
 const dots = Array.from(document.querySelectorAll('.dot'));
 
@@ -434,3 +433,16 @@ function openMail() {
   // Ouvrir un nouvel onglet avec le client de messagerie par défaut de l'utilisateur
   window.open(mailtoLink, "_blank");
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll('.property-gallery img');
+  images.forEach((img) => {
+      // Créer un nouvel élément Image pour forcer le téléchargement
+      const tempImage = new Image();
+      tempImage.src = img.src; 
+      tempImage.onload = function() {
+          // Si l'image est chargée avec succès, l'attribuer
+          img.src = tempImage.src;
+      };
+  });
+});
