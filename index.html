@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luxosun - Service de conciergerie et pet sitting</title>
+  <meta name="description" content="Luxosun est une entreprise familiale située sur la Côte d'Azur et Monaco. Services premium de conciergerie et pet sitting.">
+  <link rel="icon" href="assets/images/favicon.ico">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="assets/css/home.css">
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="assets/vendor/aos.css">
+  <link rel="stylesheet" href="assets/vendor/swiper.min.css">
+  <link rel="stylesheet" href="assets/vendor/fontawesome.min.css">
+</head>
+<body>
+
+  <!-- Header partagé -->
+  <div id="header-include"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" 
+             style="background-image: url('assets/images/monaco.jpg');">
+      <div class="hero-overlay" data-aos="fade-up">
+        <h1>Bienvenue chez Luxosun</h1>
+        <p>Services premium de conciergerie & pet sitting sur la Côte d’Azur</p>
+        <div class="hero-actions">
+          <a href="#one" class="btn-outline">Vous êtes propriétaire</a>
+          <a href="#one" class="btn-outline">Pet sitting</a>
+        </div>
+        <div class="scroll-indicator" onclick="window.scrollTo({top: window.innerHeight, behavior:'smooth'})">
+          <i class="fa-solid fa-chevron-down" style="cursor:pointer"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qui sommes-nous -->
+    <section class="services-overview container" data-aos="fade-up" data-aos-delay="200">
+      <div class="overview-card">
+        <div class="overview-image">
+          <img src="assets/images/Sun.png" alt="Soleil Luxosun">
+        </div>
+        <div class="overview-text">
+          <h2>Qui sommes-nous ?</h2>
+          <p>
+            Luxosun est une entreprise familiale située sur la Côte d’Azur et Monaco.  
+            Nous proposons des services premium de conciergerie, l'intendance de résidences  
+            principales ou secondaires, ainsi que la garde d’animaux pendant vos absences.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Cercles de services -->
+    <section class="service-circles container" data-aos="fade-up" data-aos-delay="400">
+      <div class="circle-container">
+        <div class="circle"
+        data-text="Que vous soyez un propriétaire qui cherche à déléguer ou un professionnel de l’immobilier cherchant à renforcer vos équipes, Luxosun prend en main toutes les opérations logistiques liées à vos locations : accueil, ménage, blanchisserie, produits de première nécessité…">
+          <img src="assets/images/house.svg" alt="Propriétaire" />
+          <p style="cursor: default;">Conciergerie</p>
+        </div>
+        <div class="circle"
+        data-text="Un sentiment de sécurité toute l’année grâce à notre surveillance et maintenance des résidences secondaires.">
+          <img src="assets/images/lock.svg" alt="Sécurité" />
+          <p style="cursor: default;">Sécurité & maintenance</p>
+        </div>
+        <div class="circle"
+        data-text="Pour vos vacances ou week-ends, nous gardons et promenons vos animaux : visites, jeux, promenades !">
+          <img src="assets/images/dog.svg" alt="Pet Sitting" />
+          <p style="cursor: default;">Garde & promenades</p>
+        </div>
+        <div class="circle"
+        data-text="Mise en relation avec prestataires (jardinage, piscine, réparations…) pour vos besoins tout au long de l’année.">
+          <img src="assets/images/tools.svg" alt="Prestataires" />
+          <p style="cursor: default;">Coordination prestataires</p>
+        </div>
+      </div>
+        <!-- Nouveau : conteneur de description -->
+  <div class="circle-description-container">
+    <p id="circle-description"></p>
+  </div>
+    </section>
+<div id="one"></div>
+    <!-- Vous êtes propriétaire -->
+    <section class="services-cards container" data-aos="fade-up">
+      
+      <!-- Flip-card Proprio -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/view_proprio.jpg" alt="Propriétaire">
+            <h3>Vous êtes propriétaire</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>
+              Luxosun gère l’accueil, le ménage, la maintenance et plus encore :  
+              une tranquillité d’esprit totale pour vous.
+            </p>
+            <a href="offre.html" class="btn">Découvrir nos offres</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Flip-card Pet sitting -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/noxdim.png" alt="Pet Sitting">
+            <h3>Pet sitting</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>
+              Garde et promenades personnalisées :  
+              vos animaux choyés en toute confiance.
+            </p>
+            <a href="tarif.html" class="btn">Voir les tarifs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="testimonial-section container" data-aos="fade-up">
+      <h2>Ils nous recommandent</h2>
+      <div class="testimonial-marquee-wrapper">
+        <div class="testimonial-cards marquee">
+          <!-- 5 cartes originales -->
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-avatar"><img src="assets/images/marie_pic.jpg" alt="Marie"></div>
+            <h3>Marie, 06</h3>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Je la recommande vivement ! Soins attentionnés, nouvelles et photos à chaque visite. Une vraie tranquillité d’esprit.</p>
+          </div>
+    
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-avatar"><img src="assets/images/saneva_pic.jpg" alt="Saneva"></div>
+            <h3>Saneva, 06</h3>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Mon chat était ravi ! Service au top, je pars désormais en vacances en toute sérénité. Merci Mélany !</p>
+          </div>
+    
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-avatar"><img src="assets/images/chantal_pic.jpg" alt="Chantal"></div>
+            <h3>Chantal, 06</h3>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Professionnalisme et gentillesse. J’ai reçu un rapport quotidien très complet. Je recommande vivement !</p>
+          </div>
+    
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="testimonial-avatar"><img src="assets/images/jens_pic.jpg" alt="Jens"></div>
+            <h3>Jens, Suède</h3>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>L'appartement avait ce dont nous avions besoin. Melany a été une hôte fantastique et très serviable à tous points de vue. Cela a rendu notre séjour à Nice aussi bon que possible. Un grand merci à elle !</p>
+          </div>
+    
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="testimonial-avatar"><img src="assets/images/jens_pic.jpg" alt="Farida"></div>
+            <h3>Farida, Angleterre</h3>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>J'ai eu affaire à Rumi et Melany, elles ont créé le guide d'accueil le plus utile que j'ai vu. Elles sont très accueillantes, réactives, serviables, arrangeantes, toujours disponibles. J'ai passé un excellent séjour ! Merci !</p>
+          </div>
+          <!-- Ne PLUS ajouter manuellement de duplicatas ici -->
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    <!-- Partenariats -->
+<section class="partnership-section container" data-aos="fade-up">
+  <h2>Nos partenaires</h2>
+  <div class="partnership-grid">
+    <!-- Partenaire 1 -->
+    <div class="partner-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="partner-media">
+        <img src="assets/images/asso-loulous.jpg" alt="Association Loulous">
+      </div>
+      <div class="partner-info">
+        <h3>Association "Pour le bonheur des Loulous"</h3>
+        <p>
+          Nous soutenons l’Association "Pour le bonheur des Loulous", œuvrant pour le bien-être des animaux de compagnie.
+          Ensemble, nous finançons des soins et favorisons l’adoption responsable.
+        </p>
+        <div class="partner-links">
+          <a href="https://pourlebonheurdesloulous.fr/" target="_blank" title="Visiter le site">
+            <i class="fa-solid fa-globe"></i>
+          </a>
+          <a href="https://www.instagram.com/pourlebonheurdesloulous/" target="_blank" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/Pourlebonheurdesloulous" target="_blank" title="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Partenaire 2 -->
+    <div class="partner-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="partner-media">
+        <img src="assets/images/veto-phoenix.jpg" alt="Clinique Vétérinaire Phoenix">
+      </div>
+      <div class="partner-info">
+        <h3>Vétérinaire Phoenix</h3>
+        <p>
+          En collaboration avec la Clinique Vétérinaire Phoenix, Luxosun garantit à vos animaux
+          les meilleurs soins d’urgence et de routine, à des tarifs préférentiels.
+        </p>
+        <div class="partner-links">
+          <a href="https://www.veterinaireduphoenix-lecannet.com/" target="_blank" title="Visiter le site">
+            <i class="fa-solid fa-globe"></i>
+          </a>
+          <a href="https://www.facebook.com/VeterinaireDuPhoenix" target="_blank" title="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section container" data-aos="fade-up">
+      <h2>Nous contacter</h2>
+      <div class="contact-content">
+        <!-- Bloc infos -->
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>07.88.70.76.57</span>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span><a href="mailto:luxosun@outlook.com">luxosun@outlook.com</a></span>
+          </div>
+          <div class="info-item social">
+            <span>Suivez-nous :</span>
+            <div class="social-icons labeled">
+              <a href="https://instagram.com/luxosun_conciergerie?igsh=MW9hbW4wdnczOTFmcA%3D%3D&utm_source=qr"
+                 target="_blank" rel="noopener" title="Instagram Luxosun Conciergerie">
+                <img src="assets/images/instagram.svg" alt="Instagram Conciergerie">
+                <span class="social-label">Conciergerie</span>
+              </a>
+            
+              <a href="https://instagram.com/luxosun_petsandco?igsh=MWhleDlpZmxqYzNhYg%3D%3D&utm_source=qr"
+                 target="_blank" rel="noopener" title="Instagram Luxosun Pet Sitter">
+                <img src="assets/images/instagram.svg" alt="Instagram Pet Sitter">
+                <span class="social-label">Pet Sitter</span>
+              </a>
+            
+              <a href="https://www.facebook.com/profile.php?id=100092581039383" target="_blank" rel="noopener" title="Facebook Luxosun">
+                <img src="assets/images/facebook.svg" alt="Facebook">
+                <span class="social-label">Facebook</span>
+              </a>
+            
+              <a href="https://www.linkedin.com/company/luxosun" target="_blank" rel="noopener" title="LinkedIn Luxosun">
+                <img src="assets/images/linkedin.svg" alt="LinkedIn">
+                <span class="social-label">LinkedIn</span>
+              </a>
+            </div>       
+          </div>
+        </div>
+    
+        <!-- Bloc formulaire -->
+        
+<!-- Formulaire de contact premium -->
+<form
+  class="contact-form lux-contact-form"
+  action="https://formspree.io/f/mrgvwqpr"
+  method="post"
+  data-aos="fade-left">
+
+  <div class="lux-form-heading">
+    <span class="lux-form-eyebrow">
+      <i class="fa-regular fa-comment-dots"></i>
+      PARLONS DE VOTRE PROJET
+    </span>
+
+    <h3>Envoyez-nous un message</h3>
+
+    <p>
+      Vous avez une question ou un projet ?
+      Décrivez-nous votre besoin.
+    </p>
+  </div>
+
+  <div class="lux-form-grid">
+
+    <!-- Nom -->
+    <div class="lux-form-field">
+      <label for="contact-nom">
+        Nom <span aria-hidden="true">*</span>
+      </label>
+      <div class="lux-input-wrap">
+        <i class="fa-regular fa-user" aria-hidden="true"></i>
+        <input
+          type="text"
+          id="contact-nom"
+          name="nom"
+          placeholder="Votre nom"
+          autocomplete="family-name"
+          required>
+      </div>
+    </div>
+
+    <!-- Prénom -->
+    <div class="lux-form-field">
+      <label for="contact-prenom">
+        Prénom <span aria-hidden="true">*</span>
+      </label>
+      <div class="lux-input-wrap">
+        <i class="fa-regular fa-user" aria-hidden="true"></i>
+        <input
+          type="text"
+          id="contact-prenom"
+          name="prenom"
+          placeholder="Votre prénom"
+          autocomplete="given-name"
+          required>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="lux-form-field">
+      <label for="contact-email">
+        Adresse e-mail <span aria-hidden="true">*</span>
+      </label>
+      <div class="lux-input-wrap">
+        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+        <input
+          type="email"
+          id="contact-email"
+          name="email"
+          placeholder="exemple@email.com"
+          autocomplete="email"
+          required>
+      </div>
+    </div>
+
+    <!-- Téléphone -->
+    <div class="lux-form-field">
+      <label for="contact-telephone">
+        Téléphone <span aria-hidden="true">*</span>
+      </label>
+      <div class="lux-input-wrap">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        <input
+          type="tel"
+          id="contact-telephone"
+          name="telephone"
+          placeholder="Votre numéro"
+          autocomplete="tel"
+          required>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="lux-form-field lux-form-full">
+      <label for="contact-projet">
+        Votre message <span aria-hidden="true">*</span>
+      </label>
+      <div class="lux-input-wrap lux-textarea-wrap">
+        <i class="fa-regular fa-pen-to-square" aria-hidden="true"></i>
+        <textarea
+          id="contact-projet"
+          name="projet"
+          rows="5"
+          placeholder="Décrivez-nous votre projet, vos besoins ou vos questions..."
+          required></textarea>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Envoi -->
+  <div class="lux-form-footer">
+
+    <button type="submit" class="lux-submit-btn">
+      <span>Envoyer mon message</span>
+      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    </button>
+
+    <p class="lux-form-privacy">
+      <i class="fa-solid fa-lock" aria-hidden="true"></i>
+      Vos informations sont utilisées pour traiter votre demande.
+      <a href="#popup-privacy" class="confidentialite">
+        Confidentialité
+      </a>
+    </p>
+
+    <p class="form-note">* Champs obligatoires</p>
+
+  </div>
+
+</form>
+
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Footer partagé -->
+  <div id="footer-include"></div>
+  <!-- Librairies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <!-- Vos scripts -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/index.js" defer></script>
+</body>
+</html>
