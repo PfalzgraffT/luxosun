@@ -1,0 +1,9 @@
+/* assets/css/variables.css */
+:root {
+  --color-primary:   #622323;
+  --color-secondary: #C9AC81;
+  --color-tertiary:  #ADA8BF;
+  --color-text:      #4c2821;
+  --font-family:     'Arial, sans-serif';
+  --transition-fast: .3s ease-in-out;
+}
